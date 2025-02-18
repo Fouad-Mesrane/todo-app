@@ -22,7 +22,7 @@ const Navbar = () => {
       <div className="flex gap-4 items-center">
         <Link className="flex gap-4 items-center" to={"/"}>
         <img className="w-6" src="/assets/navbar/icon.png" alt="icon" />
-          <p className="font-bold text-primary">Todo Daily</p>
+          <h1 className="font-bold text-primary">Todo Daily</h1>
         </Link>
 
         {/* Mobile Menu Button */}
@@ -40,7 +40,7 @@ const Navbar = () => {
           menuOpen ? "absolute top-12 left-0 w-full bg-white p-4 shadow-md" : "hidden md:flex"
         }`}
       >
-        <NavLink to={"/auth/login"} className="block py-2 md:py-0">
+        <NavLink to={"/auth/login"} className="block py-2 md:py-0 text-primary">
           Login
         </NavLink>
         <NavLink to={"/auth/register"} className="block py-2 md:py-0">
